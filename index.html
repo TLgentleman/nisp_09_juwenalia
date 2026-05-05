@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juwenalia 2026 | Największy Festiwal Studencki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">JUWE<span>2026</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#lineup">Line-up</a></li>
+                <li><a href="#tickets">Bilety</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>JUWENALIA 2026</h1>
+            <p>Trzy dni bezprecedensowej zabawy, najlepszej muzyki i studenckiego klimatu!</p>
+            
+            <div class="countdown" id="countdown">
+                <div class="time-box"><span id="days">00</span><p>Dni</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Godziny</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Minuty</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>Sekundy</p></div>
+            </div>
+
+            <a href="#tickets" class="btn btn-primary">Kup Bilet</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>O wydarzeniu</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-music"></i>
+                <h3>3 Sceny muzyczne</h3>
+                <p>Od mocnego rocka, przez hip-hop, aż po elektronikę. Każdy znajdzie coś dla siebie.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-beer-mug-empty"></i>
+                <h3>Strefa Gastro</h3>
+                <p>Najlepsze foodtrucki z całego kraju, zimne napoje i strefy chilloutu.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-users"></i>
+                <h3>Wielki Pochód</h3>
+                <p>Tradycyjny studencki pochód ulicami miasta i symboliczne przejęcie kluczy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lineup" id="lineup">
+        <h2>Kto wystąpi?</h2>
+        <div class="lineup-container">
+            <div class="artist-card">
+                <div class="artist-img" style="background-image: url('https://via.placeholder.com/300x400');"></div>
+                <div class="artist-info">
+                    <h3>Artysta Gwiazda 1</h3>
+                    <p>Piątek, Scena Główna</p>
+                </div>
+            </div>
+            <div class="artist-card">
+                <div class="artist-img" style="background-image: url('https://via.placeholder.com/300x400');"></div>
+                <div class="artist-info">
+                    <h3>Artysta Gwiazda 2</h3>
+                    <p>Sobota, Scena Główna</p>
+                </div>
+            </div>
+            <div class="artist-card">
+                <div class="artist-img" style="background-image: url('https://via.placeholder.com/300x400');"></div>
+                <div class="artist-info">
+                    <h3>Artysta Gwiazda 3</h3>
+                    <p>Niedziela, Scena Alternatywna</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tickets" id="tickets">
+        <h2>Wybierz swój bilet</h2>
+        <div class="tickets-grid">
+            <div class="ticket-card">
+                <h3>Bilet Studencki</h3>
+                <p class="price">39 PLN</p>
+                <ul>
+                    <li>Wstęp na 1 wybrany dzień</li>
+                    <li>Wymagana ważna legitymacja</li>
+                    <li>Dostęp do strefy gastro</li>
+                </ul>
+                <button class="btn btn-ticket">Kupuję</button>
+            </div>
+            <div class="ticket-card featured">
+                <div class="badge">Najpopularniejszy</div>
+                <h3>Karnet 3-Dniowy</h3>
+                <p class="price">79 PLN</p>
+                <ul>
+                    <li>Wstęp na wszystkie 3 dni</li>
+                    <li>Opaska festiwalowa</li>
+                    <li>Darmowy field-camping</li>
+                </ul>
+                <button class="btn btn-ticket-featured">Kupuję</button>
+            </div>
+            <div class="ticket-card">
+                <h3>Bilet Normalny</h3>
+                <p class="price">59 PLN</p>
+                <ul>
+                    <li>Wstęp na 1 wybrany dzień</li>
+                    <li>Dla osób niestudiujących</li>
+                    <li>Dostęp do strefy gastro</li>
+                </ul>
+                <button class="btn btn-ticket">Kupuję</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Masz pytania?</h2>
+        <p>Napisz do nas – odpowiemy najszybciej jak to możliwe!</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Twoje imię" required>
+            <input type="email" placeholder="Twój e-mail" required>
+            <textarea placeholder="Treść wiadomości" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Juwenalia. Wszystkie prawa zastrzeżone. Strona stworzona na potrzeby festiwalu.</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
