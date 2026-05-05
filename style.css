@@ -216,6 +216,91 @@ h2::after {
     line-height: 1.6;
 }
 
+/* --- NOWA SEKCJA: Słowo od Dziekana --- */
+.dean-section {
+    background-color: rgba(26, 22, 46, 0.5);
+    border-top: 1px solid rgba(0, 240, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.dean-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dean-image-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 127, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dean-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(30%);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.dean-signature {
+    margin-top: 15px;
+}
+
+.dean-signature h3 {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 5px;
+}
+
+.dean-signature p {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.dean-quote {
+    flex: 2;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 40px;
+    border-radius: 20px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: rgba(255, 0, 127, 0.15);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.dean-quote blockquote p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--light-text);
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.dean-quote blockquote p.quote-sub {
+    font-size: 1.05rem;
+    color: var(--muted-text);
+    margin-bottom: 0;
+}
+
 /* --- Sekcja Line-up --- */
 .lineup-container {
     display: grid;
@@ -406,9 +491,21 @@ footer p {
 }
 
 /* --- RWD (Responsywność) --- */
+@media (max-width: 992px) {
+    .dean-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .dean-image-container {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Można dodać aktywację w JS dla menu hamburger */
+        display: none;
     }
 
     .menu-toggle {
